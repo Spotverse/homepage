@@ -1,1 +1,3 @@
-# legals
+# homepage
+spotverse homepage
+
