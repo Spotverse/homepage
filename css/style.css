@@ -1,0 +1,433 @@
+body {
+    background-color: #ffffff;
+    font-family: 'Sk-Modernist';
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header-text li a {
+    margin-right: 20px;
+    font-weight: 700;
+    color: #70717C;
+}
+
+.banner {
+    width: 100%;
+    height: 720px;
+    background: url(../images/map.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.banner-content h5 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #FCFCFC;
+}
+
+.section-head h5 {
+    font-size: 35px;
+    color: #000000;
+    font-weight: 700;
+}
+
+.text-orange {
+    color: #F63F00;
+}
+
+.card-serial {
+    width: 80px;
+    height: 80px;
+    background-color: #ffffff;
+    box-shadow: 0px 20px 50px 0px #00000012;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 80px;
+    position: absolute;
+    top: -127px;
+    z-index: 1;
+    left: 120px;
+}
+
+.card-serial span {
+    color: #F63F00;
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 70.47px;
+}
+
+.card-ctm-bg {
+    border: none;
+    background-color: #F8F8F8;
+    border-radius: 0px 0px 29px 29px;
+}
+
+.card-ctm-bg .card-img-top {
+    background-color: #ffffff;
+}
+
+.card-ctm-bg .card-title {
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 130.5%;
+}
+
+.card-ctm-bg .card-text {
+    color: #323755;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 152.5%;
+}
+
+.upper-image {
+    margin-top: 220px;
+    position: relative;
+}
+
+.upper-image::before {
+    content: "";
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    top: -149px;
+    background: url(../images/background-line.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 130px;
+    z-index: -1;
+}
+
+.card-serial-2 {
+    top: -97px;
+}
+
+.card-serial-3 {
+    top: -177px;
+}
+
+.space-top-20 {
+    margin-top: 30px;
+}
+
+.space-top-15 {
+    margin-top: 15px;
+}
+
+.sub-text {
+    color: #F63F00;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 130.5%;
+    letter-spacing: 1.95px;
+    text-transform: uppercase;
+}
+
+.main-head-inner {
+    color: #000;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 130.5%;
+    text-transform: capitalize;
+}
+
+.inner-content {
+    color: #323755;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 152.5%;
+}
+
+.theme-button {
+    padding: 8px 24px !important;
+    border-radius: 32px;
+    background: #F63F00;
+    color: #ffffff;
+    box-shadow: 0px 12px 20px 0px rgba(89, 52, 213, 0.12);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 150%;
+    text-transform: capitalize;
+
+}
+
+.carousel-bg {
+    background-color: #0000000A;
+    padding: 80px 0px;
+}
+
+.top-star i {
+    color: #F63F00;
+}
+
+.card-cst {
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.07);
+    padding: 10px 20px;
+}
+
+.f-16 {
+    font-size: 16px;
+}
+
+.f-14 {
+    font-size: 14px;
+}
+
+.owl-nav {
+    display: none;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.owl-dots button.owl-dot {
+    width: 18px;
+    height: 18px;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 1px solid #424242;
+    margin-left: 10px;
+}
+
+.owl-dots button.owl-dot.active {
+    background-color: #F63F00;
+    border: none;
+}
+
+.owl-dots button.owl-dot:focus,
+.owl-dots button.owl-dot:focus-visible {
+    outline: none;
+}
+
+.about-app {
+    width: 100%;
+    padding: 150px 0;
+    background: url(../images/about-app.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.space-form-right {
+    padding-right: 135px;
+}
+
+.social-icons a i {
+    font-size: 26px;
+    color: #323755;
+    margin-right: 10px;
+}
+
+.quick-links {
+    margin-top: 20px;
+}
+
+.quick-links span {
+    color: #323755;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    text-transform: capitalize;
+}
+
+.quick-links a {
+    border-right: 1px solid #323755;
+    padding-right: 8px;
+    margin-right: 8px;
+}
+
+.quick-links a:last-child {
+    border-right: none;
+    padding-right: 0px;
+    margin-right: 0px;
+}
+
+.right-reserved {
+    margin-top: 12px;
+}
+
+.right-reserved span {
+    color: #323755;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    text-transform: capitalize;
+}
+
+.client-image {
+    width: 45px;
+    height: 45px;
+}
+
+/*---------responcive-start------------*/
+@media screen and (max-width: 1440px) {
+    .about-app {
+        padding: 60px 0;
+        background-position: center center;
+    }
+
+    .space-form-right {
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .card-serial span {
+        font-size: 40px;
+    }
+
+    .card-serial {
+        width: 60px;
+        height: 60px;
+    }
+
+    .card-serial-2 {
+        top: -122px;
+    }
+
+    .quick-links span {
+        font-size: 15px;
+    }
+
+    .section-text button.btn.theme-button {
+        margin-top: 5px !important;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .upper-image::before {
+        background: url(../images/bg-for-mobile.png);
+        background-repeat: no-repeat;
+        left: 30%;
+        top: -79px;
+        width: 56%;
+        background-size: contain;
+    }
+
+    .app-icons {
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center;
+    }
+
+    .banner-content {
+        text-align: center;
+    }
+
+    .banner-content h5 {
+        font-size: 28px;
+    }
+
+    .icon-1 {
+        width: 196px;
+        margin-bottom: 20px;
+    }
+
+    .icon-2 {
+        width: 196px;
+    }
+
+    .section-head {
+        text-align: center;
+    }
+
+    .section-head h5 {
+        font-size: 28px;
+    }
+
+    .card-serial {
+        left: 50%;
+    }
+
+    .space-top-15 {
+        margin-top: 150px;
+    }
+
+    .space-top-20 {
+        margin-top: 150px;
+    }
+
+    .card-serial.card-serial-2 {
+        top: 41px;
+        left: 46%;
+    }
+
+    .card-serial-3 {
+        top: 63px;
+    }
+
+    .about-app {
+        background: url(../images/about-for-mobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 420px;
+    }
+
+    .app-icons-2 {
+        align-items: flex-start !important;
+    }
+
+    .banner {
+        background: url(../images/map-mobile.png);
+    }
+
+    .card-ctm-bg .card-title {
+        font-size: 18px;
+    }
+
+    .card-ctm-bg .card-text {
+        font-size: 14px;
+    }
+
+    .sub-text {
+        font-size: 13px;
+    }
+
+    .main-head-inner {
+        font-size: 25px;
+    }
+
+    .inner-content {
+        font-size: 14px;
+    }
+
+    .main-head-inner {
+        font-size: 16px;
+    }
+
+    .main-head-inner.text-mobile {
+        font-size: 25px;
+    }
+
+    .right-reserved span {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .upper-image::before {
+        left: 27%;
+        width: 64%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .upper-image::before {
+        left: 27%;
+        width: 64%;
+    }
+}
+/*---------responcive-end------------*/

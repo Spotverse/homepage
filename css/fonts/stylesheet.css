@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Sk-Modernist Mono';
+    src: url('Sk-Modernist-Mono.woff2') format('woff2'),
+        url('Sk-Modernist-Mono.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sk-Modernist';
+    src: url('Sk-Modernist-Regular.woff2') format('woff2'),
+        url('Sk-Modernist-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sk-Modernist';
+    src: url('Sk-Modernist-Bold.woff2') format('woff2'),
+        url('Sk-Modernist-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
