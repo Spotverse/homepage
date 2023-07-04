@@ -1,13 +1,436 @@
+<!DOCTYPE html>
 <html>
 <head>
-  <title>Spotverse.co</title>
-  </head>
-  
-  <body>
-    <a href=FAQs.html>FAQs</a> <br/>
-    <a href="cookie-policy.html">Cookie Policy</a> <br/>
-    <a href=licences.html>Licences</a> <br/>
-    <a href="privacy-policy.html">Privacy Policy</a> <br/>
-    <a href="terms-of-use.html">Terms of Use</a> <br/>
-  </body>
+    <title>Spotverse</title>
+    <!---------meta------------>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---------font-awesome-cdn------------>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!---------owl-crousel-cdn------------>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <!---------bootstrap-cdn------------>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!---------custom-stylesheet------------>
+    <link rel="stylesheet" href="./css/style.css">
+    <!---------font-family-stylesheet------------>
+    <link rel="stylesheet" href="./css/fonts/stylesheet.css">
+    <!---------bootstrap-script-cdn------------>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <!---------owl-crousel-script-cdn------------>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+</head>
+</head>
+
+<body>
+    <!---------header-start------------>
+    <section class="w-100 my-2">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/logo-spotverse.png" width="100%" alt="logo" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav header-text">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">How Spotverse Works</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Business</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Success Stories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"> About</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <!---------header-end------------>
+    <!---------banner-start------------>
+    <section>
+        <div class="w-100">
+            <div class="banner">
+                <div class="banner-content mb-4">
+                    <h5>Discover Connections Through Location</h5>
+                    <div class="app-icons d-flex justify-content-around my-4">
+                        <div class="icon-1">
+                            <img src="./images/apple.png" width="100%" />
+                        </div>
+                        <div class="icon-2">
+                            <img src="./images/play-store.png" width="100%" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------banner-end------------>
+    <!---------section-first-start------------>
+    <section class="my-5 py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-head">
+                        <h5>How <span class="text-orange">Spotverse</span> Works</h5>
+                    </div>
+                    <div class="section-content">
+                        <div class="upper-image">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="d-flex align-items-center flex-column">
+                                        <div class="card-serial">
+                                            <span>1</span>
+                                        </div>
+                                        <div class="card card-ctm-bg">
+                                            <img class="card-img-top" src="./images/card-1.png" alt="Card image cap" />
+                                            <div class="card-body text-center p-4">
+                                                <h5 class="card-title">Select the Location</h5>
+                                                <p class="card-text">Users express interest by tapping on places on the
+                                                    map
+                                                    or selecting based on categories (All, Non-Alcoholic, Alcoholic,
+                                                    LGBTQ+,
+                                                    Live Music, etc.)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="d-flex align-items-center flex-column">
+                                        <div class="card-serial card-serial-2">
+                                            <span>2</span>
+                                        </div>
+                                        <div class="card card-ctm-bg space-top-20">
+                                            <img class="card-img-top" src="./images/card-2.png" alt="Card image cap" />
+                                            <div class="card-body text-center p-4">
+                                                <h5 class="card-title">Explore the Place</h5>
+                                                <p class="card-text">Users can like or dislike profiles, applying
+                                                    various filters for search customization, including a particular
+                                                    area, drink type, age, gender, school, etc.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="d-flex align-items-center flex-column">
+                                        <div class="card-serial card-serial-3">
+                                            <span>3</span>
+                                        </div>
+                                        <div class="card card-ctm-bg space-top-15">
+                                            <img class="card-img-top" src="./images/card-3.png" alt="Card image cap" />
+                                            <div class="card-body text-center p-4">
+                                                <h5 class="card-title">Match, Chat, and Meet</h5>
+                                                <p class="card-text">When two users express mutual interest in the same
+                                                    location and swipe right on each other profiles, a match occurs.
+                                                    They can start chatting and plan a meeting at that location.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------section-first-end------------>
+    <!---------section-second-start------------>
+    <section class="my-5 py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-7">
+                    <div class="w-100">
+                        <img src="./images/contact-us-map.png" alt="map" width="100%" />
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="section-text">
+                        <span class="sub-text">For business</span>
+                        <h3 cLass="main-head-inner">Add Your Venue</h3>
+                        <p class="inner-content">Contact us to discuss adding your venue and reaching a wider audience.
+                            Let's create a valuable presence for your business together.</p>
+                        <a href="#"><button class="btn theme-button mt-4">contact us now</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------section-second-end------------>
+
+    <!---------section-third-start------------>
+    <section class="carousel-bg">
+        <div class="container-fluid">
+            <div class="col-md-12">
+                <div class="text-center">
+                    <h3 cLass="main-head-inner">Hear our success stories</h3>
+                </div>
+                <div class="owl-carousel mt-5">
+                    <div class="card-cst">
+                        <div class="top-star mb-2">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="mb-4">
+                            <p class="inner-content">Contact us to discuss adding your venue and reaching a wider
+                                audience.
+                                Let's create a valuable presence for your business together.</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="client-image">
+                                <img src="./images/client-1.png" alt="client image" width="100%" />
+                            </div>
+                            <div class="ml-2">
+                                <h3 cLass="main-head-inner f-16 mb-0">Emily Stones</h3>
+                                <p class="inner-content f-14 m-0">CEO, Marketing Guru</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-cst">
+                        <div class="top-star mb-2">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="mb-4">
+                            <p class="inner-content">Contact us to discuss adding your venue and reaching a wider
+                                audience.
+                                Let's create a valuable presence for your business together.</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="client-image">
+                                <img src="./images/client-2.png" alt="client image" width="100%" />
+                            </div>
+                            <div class="ml-2">
+                                <h3 cLass="main-head-inner f-16 mb-0">Emily Stones</h3>
+                                <p class="inner-content f-14 m-0">CEO, Marketing Guru</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-cst">
+                        <div class="top-star mb-2">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="mb-4">
+                            <p class="inner-content">Contact us to discuss adding your venue and reaching a wider
+                                audience.
+                                Let's create a valuable presence for your business together.</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="client-image">
+                                <img src="./images/client-3.png" alt="client image" width="100%" />
+                            </div>
+                            <div class="ml-2">
+                                <h3 cLass="main-head-inner f-16 mb-0">Emily Stones</h3>
+                                <p class="inner-content f-14 m-0">CEO, Marketing Guru</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-cst">
+                        <div class="top-star mb-2">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="mb-4">
+                            <p class="inner-content">Contact us to discuss adding your venue and reaching a wider
+                                audience.
+                                Let's create a valuable presence for your business together.</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="client-image">
+                                <img src="./images/client-4.png" alt="client image" width="100%" />
+                            </div>
+                            <div class="ml-2">
+                                <h3 cLass="main-head-inner f-16 mb-0">Emily Stones</h3>
+                                <p class="inner-content f-14 m-0">CEO, Marketing Guru</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-cst">
+                        <div class="top-star mb-2">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="mb-4">
+                            <p class="inner-content">Contact us to discuss adding your venue and reaching a wider
+                                audience.
+                                Let's create a valuable presence for your business together.</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="client-image">
+                                <img src="./images/client-1.png" alt="client image" width="100%" />
+                            </div>
+                            <div class="ml-2">
+                                <h3 cLass="main-head-inner f-16 mb-0">Emily Stones</h3>
+                                <p class="inner-content f-14 m-0">CEO, Marketing Guru</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-cst">
+                        <div class="top-star mb-2">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="mb-4">
+                            <p class="inner-content">Contact us to discuss adding your venue and reaching a wider
+                                audience.
+                                Let's create a valuable presence for your business together.</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="client-image">
+                                <img src="./images/client-2.png" alt="client image" width="100%" />
+                            </div>
+                            <div class="ml-2">
+                                <h3 cLass="main-head-inner f-16 mb-0">Emily Stones</h3>
+                                <p class="inner-content f-14 m-0">CEO, Marketing Guru</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-cst">
+                        <div class="top-star mb-2">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="mb-4">
+                            <p class="inner-content">Contact us to discuss adding your venue and reaching a wider
+                                audience.
+                                Let's create a valuable presence for your business together.</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="client-image">
+                                <img src="./images/client-3.png" alt="client image" width="100%" />
+                            </div>
+                            <div class="ml-2">
+                                <h3 cLass="main-head-inner f-16 mb-0">Emily Stones</h3>
+                                <p class="inner-content f-14 m-0">CEO, Marketing Guru</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-cst">
+                        <div class="top-star mb-2">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="mb-4">
+                            <p class="inner-content">Contact us to discuss adding your venue and reaching a wider
+                                audience.
+                                Let's create a valuable presence for your business together.</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="client-image">
+                                <img src="./images/client-4.png" alt="client image" width="100%" />
+                            </div>
+                            <div class="ml-2">
+                                <h3 cLass="main-head-inner f-16 mb-0">Emily Stones</h3>
+                                <p class="inner-content f-14 m-0">CEO, Marketing Guru</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------section-third-end------------>
+    <!---------section-forth-start------------>
+    <section class="about-app">
+        <div class="container-fluid">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-7"></div>
+                    <div class="col-md-5">
+                        <div class="section-text space-form-right">
+                            <h3 cLass="main-head-inner text-white text-mobile">about <span
+                                    class="text-orange">spotverse</span></h3>
+                            <p class="inner-content text-white">Spotverse is a social network that has revolutionized
+                                the way people find matches. By selecting the location first, Spotverse makes finding
+                                meaningful connections memorable and effortless. </p>
+                            <p class="inner-content text-white"> Whether you're dating or looking for mates, explore
+                                preferred locations, spark connections, and embrace the nostalgia of meeting your match
+                                in interesting places. Experience Spotverse today and rediscover the joy of memorable
+                                connections.</p>
+                            <div class="app-icons app-icons-2 d-flex mt-5">
+                                <div class="icon-1 mr-4">
+                                    <img src="./images/apple.png" width="100%" />
+                                </div>
+                                <div class="icon-2">
+                                    <img src="./images/play-store.png" width="100%" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------section-forth-end------------>
+    <!---------section-fiveth-start------------>
+    <section class="py-4">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-6 text-center">
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                    <div class="quick-links">
+                        <a href="#"><span>FAQs</span></a>
+                        <a href="#"><span>Privacy Policy</span></a>
+                        <a href="#"><span>Terms of Use</span></a>
+                        <a href="#"><span>Cookie Policy</span></a>
+                        <a href="#"><span>contact us</span></a>
+                    </div>
+                    <div class="right-reserved">
+                        <span>© 2023 spotverse | All Rights Reserved</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------section-fiveth-end------------>
+    <!---------owl-crousel-script------------>
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel();
+        });
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        });
+    </script>
+</body>
+
 </html>
