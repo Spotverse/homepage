@@ -270,7 +270,50 @@ body {
     width: 45px;
     height: 45px;
 }
-
+.fixed-on-top{
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background-color: #ffffff;
+}
+.icon-1, .icon-2{
+    cursor: pointer;
+}
+.contact-us-form div{
+    margin-bottom: 10px;
+}
+.contact-us-form div input{
+    font-size: 15px;
+    color: #323755;
+    padding: 20px 10px;
+}
+.contact-us-form div p{
+    font-size: 13px;
+    font-weight: 700;
+    color: #323755;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+.cookies-text {
+    color: #7a7a7a;
+    font-size: 18px;
+}
+.cookies-div{
+    background: #fbfbfb;
+    border-top: 1px solid #d5d5d5;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 3;
+}
+.cookies-btn{
+    padding: 10px 70px !important;
+    box-shadow: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+}
 /*---------responcive-start------------*/
 @media screen and (max-width: 1440px) {
     .about-app {
@@ -328,7 +371,7 @@ body {
     }
 
     .banner-content h5 {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     .icon-1 {
@@ -415,12 +458,38 @@ body {
     .right-reserved span {
         font-size: 14px;
     }
+    .banner {
+        height: 560px;
+    }
+    .header-collapse{
+        position: absolute;
+        top: 90px;
+        background-color: #ffffff;
+        width: 100%;
+        border: 1px solid #e9e8e8;
+        left: 0px;
+    }
+    .header-collapse ul li{
+        border-bottom: 1px solid #e9e8e8;
+        padding: 0 15px;
+    }
+    .mobile-center{
+        text-align: center !important;
+    }
+    .cookies-btn{
+        padding: 10px 0px !important;
+        margin-top: 20px;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 390px) {
     .upper-image::before {
         left: 27%;
         width: 64%;
+    }
+    .navbar-brand img{
+        max-width: 140px;
     }
 }
 
