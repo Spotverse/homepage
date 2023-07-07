@@ -35,7 +35,7 @@
 
 <body>
     <!---------header-start------------>
-    <section class="w-100 my-2 fixed-on-top">
+    <section class="w-100 py-2 fixed-on-top">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
                 <a class="navbar-brand" href="#">
@@ -87,7 +87,7 @@
     </section>
     <!---------banner-end------------>
     <!---------section-first-start------------>
-    <section class="my-5 py-4" id="spotverse-work">
+    <section class="space-form-top" id="spotverse-work">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -156,9 +156,9 @@
     </section>
     <!---------section-first-end------------>
     <!---------section-second-start------------>
-    <section class="my-5 py-5" id="for-business">
+    <section class="space-form-top" id="for-business">
         <div class="container">
-            <div class="row align-items-center">
+            <div class="row align-items-center" id="for-business">
                 <div class="col-md-7">
                     <div class="w-100">
                         <img src="./images/contact-us-map.png" alt="map" width="100%" />
@@ -170,21 +170,7 @@
                         <h3 cLass="main-head-inner">Add Your Venue</h3>
                         <p class="inner-content">Contact us to discuss adding your venue and reaching a wider audience.
                             Let's create a valuable presence for your business together.</p>
-                        <div class="contact-us-form">
-                            <div>
-                                <input type="text" class="form-control" placeholder="First name">
-                            </div>
-                            <div>
-                                <input type="text" class="form-control" placeholder="Email">
-                            </div>
-                            <div>
-                                <input type="text" class="form-control" placeholder="Phone number (optional)">
-                            </div>
-                            <div>
-                                <p>*Please fill out the form below to send us an email and we will get back to you as soon as possible. </p>
-                            </div>
-                        </div>
-                        <a href="#"><button class="btn theme-button mt-2">contact us now</button></a>
+                        <a href="#"><button class="btn theme-button mt-2" data-toggle="modal" data-target="#cotact-pop-up" type="button">contact us now</button></a>
                     </div>
                 </div>
             </div>
@@ -429,6 +415,11 @@
         <div class="container-fluid">
             <div class="col-md-12">
                 <div class="row align-items-center">
+                    <div class="col-md-12 text-right pb-2">
+                        <button type="button" class="btn close poup-close for-cookies-closs">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
                     <div class="col-md-8 col-sm-12 mobile-center">
                         <span class="cookies-text">We use cookies to ensure you get the best user experience on our website. By continuing to use this site, you agree to the use of these cookies.</span>
                     </div>
@@ -440,12 +431,55 @@
     </section>
     <!---------site-cookies-end------------>
 
+    <!-- Modal-start -->
+    <div class="modal fade" id="cotact-pop-up" tabindex="-1" role="dialog" aria-labelledby="conact-up" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title font-weight-bold" id="conact-up">Help Us To find You</h5>
+            <button type="button" class="btn close poup-close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <div class="contact-us-form">
+                    <div>
+                        <p><b>*Note:</b> Please fill out the form below to send us an email and we will get back to you as soon as possible. </p>
+                    </div>
+                    <div>
+                        <input type="text" class="form-control" placeholder="First name">
+                    </div>
+                    <div>
+                        <input type="text" class="form-control" placeholder="Email">
+                    </div>
+                    <div>
+                        <input type="text" class="form-control" placeholder="Phone number (optional)">
+                    </div>
+                    <div>
+                        <input type="text" class="form-control message-box" placeholder="Your message">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn theme-button" data-dismiss="modal">Submit</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Modal-end -->
 
     <!---------owl-crousel-script------------>
     <script>
         $(document).ready(function () {
             $("button.cookies-btn.theme-button").click(function(){
                 $("section.cookies-div").hide();
+            })
+            $("button.for-cookies-closs").click(function(){
+                $("section.cookies-div").hide();
+            })
+
+            $(".header-collapse ul li a").click(function(){
+                $("div#navbarSupportedContent").removeClass("show");
             })
             $(".owl-carousel").owlCarousel();
         });
