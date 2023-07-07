@@ -162,7 +162,8 @@ body {
 
 .carousel-bg {
     background-color: #0000000A;
-    padding: 80px 0px;
+    padding: 110px 0px;
+    margin-top: 110px;
 }
 
 .top-star i {
@@ -270,35 +271,43 @@ body {
     width: 45px;
     height: 45px;
 }
-.fixed-on-top{
+
+.fixed-on-top {
     position: sticky;
     top: 0;
     z-index: 3;
-    background-color: #ffffff;
+    background-color: #FFFBFA;
 }
-.icon-1, .icon-2{
+
+.icon-1,
+.icon-2 {
     cursor: pointer;
 }
-.contact-us-form div{
+
+.contact-us-form div {
     margin-bottom: 10px;
 }
-.contact-us-form div input{
+
+.contact-us-form div input {
     font-size: 15px;
     color: #323755;
     padding: 20px 10px;
 }
-.contact-us-form div p{
-    font-size: 13px;
-    font-weight: 700;
-    color: #323755;
-    margin-top: 5px;
-    margin-bottom: 0;
+
+.contact-us-form div p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #444444;
+    line-height: 19px;
+    padding-bottom: 10px;
 }
+
 .cookies-text {
     color: #7a7a7a;
     font-size: 18px;
 }
-.cookies-div{
+
+.cookies-div {
     background: #fbfbfb;
     border-top: 1px solid #d5d5d5;
     padding: 20px 0;
@@ -307,13 +316,38 @@ body {
     width: 100%;
     z-index: 3;
 }
-.cookies-btn{
+
+.cookies-btn {
     padding: 10px 70px !important;
     box-shadow: none;
     border: none;
     font-size: 18px;
     font-weight: 600;
 }
+
+section.space-form-top {
+    padding-top: 110px;
+}
+
+.message-box {
+    padding: 20px 0 70px 10px !important;
+}
+
+.poup-close:focus-visible {
+    outline: none;
+}
+
+.poup-close.btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.for-cookies-closs{
+    position: absolute;
+    top: -20px;
+    right: 0;
+}
+
 /*---------responcive-start------------*/
 @media screen and (max-width: 1440px) {
     .about-app {
@@ -371,7 +405,8 @@ body {
     }
 
     .banner-content h5 {
-        font-size: 24px;
+        font-size: 26px;
+        padding: 0 10px;
     }
 
     .icon-1 {
@@ -425,6 +460,8 @@ body {
 
     .banner {
         background: url(../images/map-mobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     .card-ctm-bg .card-title {
@@ -448,7 +485,7 @@ body {
     }
 
     .main-head-inner {
-        font-size: 16px;
+        font-size: 25px;
     }
 
     .main-head-inner.text-mobile {
@@ -458,10 +495,12 @@ body {
     .right-reserved span {
         font-size: 14px;
     }
+
     .banner {
-        height: 560px;
+        height: 90vh;
     }
-    .header-collapse{
+
+    .header-collapse {
         position: absolute;
         top: 90px;
         background-color: #ffffff;
@@ -469,14 +508,17 @@ body {
         border: 1px solid #e9e8e8;
         left: 0px;
     }
-    .header-collapse ul li{
+
+    .header-collapse ul li {
         border-bottom: 1px solid #e9e8e8;
         padding: 0 15px;
     }
-    .mobile-center{
+
+    .mobile-center {
         text-align: center !important;
     }
-    .cookies-btn{
+
+    .cookies-btn {
         padding: 10px 0px !important;
         margin-top: 20px;
         width: 100%;
@@ -488,7 +530,8 @@ body {
         left: 27%;
         width: 64%;
     }
-    .navbar-brand img{
+
+    .navbar-brand img {
         max-width: 140px;
     }
 }
@@ -499,4 +542,5 @@ body {
         width: 64%;
     }
 }
+
 /*---------responcive-end------------*/
