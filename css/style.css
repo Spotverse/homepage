@@ -1,6 +1,10 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #ffffff;
-    font-family: 'Sk-Modernist';
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -12,7 +16,7 @@ body {
 
 .header-text li a {
     margin-right: 20px;
-    font-weight: 700;
+    font-weight: 600;
     color: #70717C;
 }
 
@@ -28,13 +32,15 @@ body {
 }
 
 .banner-content h5 {
-    font-size: 30px;
-    font-weight: 700;
+    font-size: 32px;
+    font-weight: 600;
     color: #FCFCFC;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
 .section-head h5 {
-    font-size: 35px;
+    font-size: 34px;
     color: #000000;
     font-weight: 700;
 }
@@ -77,9 +83,10 @@ body {
 
 .card-ctm-bg .card-title {
     color: #000;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     line-height: 130.5%;
+    margin-bottom: 4px;
 }
 
 .card-ctm-bg .card-text {
@@ -125,7 +132,7 @@ body {
 
 .sub-text {
     color: #F63F00;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 700;
     line-height: 130.5%;
     letter-spacing: 1.95px;
@@ -134,7 +141,7 @@ body {
 
 .main-head-inner {
     color: #000;
-    font-size: 35px;
+    font-size: 34px;
     font-weight: 700;
     line-height: 130.5%;
     text-transform: capitalize;
@@ -148,13 +155,13 @@ body {
 }
 
 .theme-button {
-    padding: 8px 24px !important;
+    padding: 12px 26px !important;
     border-radius: 32px;
     background: #F63F00;
     color: #ffffff;
     box-shadow: 0px 12px 20px 0px rgba(89, 52, 213, 0.12);
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 150%;
     text-transform: capitalize;
 
@@ -228,11 +235,11 @@ body {
 .social-icons a i {
     font-size: 26px;
     color: #323755;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .quick-links {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .quick-links span {
@@ -257,6 +264,7 @@ body {
 
 .right-reserved {
     margin-top: 12px;
+    margin-bottom: 10px;
 }
 
 .right-reserved span {
@@ -276,7 +284,11 @@ body {
     position: sticky;
     top: 0;
     z-index: 3;
-    background-color: #FFFBFA;
+    background-color: #ffffff;
+}
+.background-color-nav{
+    background-color: #FFFBFA !important;
+    border-bottom: 1px solid #dddddd;
 }
 
 .icon-1,
@@ -342,12 +354,26 @@ section.space-form-top {
     box-shadow: none;
 }
 
-.for-cookies-closs{
+.for-cookies-closs {
     position: absolute;
     top: -20px;
     right: 0;
 }
 
+.bg-transparent {
+    padding: 0;
+}
+
+.space-bottom {
+    margin-bottom: 40px;
+}
+.popup-submit{
+    padding: 8px 30px !important;
+}
+.popup-submit:focus,.popup-submit:focus-visible{
+    box-shadow: none;
+    outline: none;
+}
 /*---------responcive-start------------*/
 @media screen and (max-width: 1440px) {
     .about-app {
@@ -375,7 +401,7 @@ section.space-form-top {
     }
 
     .quick-links span {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .section-text button.btn.theme-button {
@@ -410,12 +436,20 @@ section.space-form-top {
     }
 
     .icon-1 {
-        width: 196px;
+        width: 180px;
         margin-bottom: 20px;
     }
 
     .icon-2 {
-        width: 196px;
+        width: 180px;
+    }
+
+    .icon-1 img {
+        height: 58px;
+    }
+
+    .icon-2 img {
+        height: 58px;
     }
 
     .section-head {
@@ -500,20 +534,6 @@ section.space-form-top {
         height: 90vh;
     }
 
-    .header-collapse {
-        position: absolute;
-        top: 90px;
-        background-color: #ffffff;
-        width: 100%;
-        border: 1px solid #e9e8e8;
-        left: 0px;
-    }
-
-    .header-collapse ul li {
-        border-bottom: 1px solid #e9e8e8;
-        padding: 0 15px;
-    }
-
     .mobile-center {
         text-align: center !important;
     }
@@ -523,6 +543,10 @@ section.space-form-top {
         margin-top: 20px;
         width: 100%;
     }
+
+    .space-bottom {
+        margin-bottom: 20px;
+    }
 }
 
 @media screen and (max-width: 390px) {
@@ -530,16 +554,27 @@ section.space-form-top {
         left: 27%;
         width: 64%;
     }
-
-    .navbar-brand img {
-        max-width: 140px;
-    }
 }
 
 @media screen and (max-width: 450px) {
     .upper-image::before {
         left: 27%;
         width: 64%;
+    }
+
+    .bg-transparent {
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+
+    .navbar-brand img {
+        max-width: 121px;
+        vertical-align: text-top;
+    }
+
+    button.navbar-toggler {
+        padding: 1px 6px;
+        font-size: 16px;
     }
 }
 
