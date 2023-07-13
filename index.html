@@ -20,6 +20,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!---------bootstrap-script-cdn------------>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -77,12 +78,16 @@
                 <div class="banner-content mb-4">
                     <h5>Discover Connections Through Location</h5>
                     <div class="app-icons d-flex justify-content-around mt-5 mb-4">
-                        <div class="icon-1">
+                        <a href="#">
+                        <button class="btn icon-1">
                             <img src="./images/apple.png" width="100%" />
-                        </div>
-                        <div class="icon-2">
+                        </button>
+                        </a>
+                        <a href="#">
+                        <button class="btn icon-2">
                             <img src="./images/play-store.png" width="100%" />
-                        </div>
+                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -372,12 +377,16 @@
                                 in interesting places. Experience Spotverse today and rediscover the joy of memorable
                                 connections.</p>
                             <div class="app-icons app-icons-2 d-flex mt-5">
-                                <div class="icon-1 mr-4">
-                                    <img src="./images/apple.png" width="100%" />
-                                </div>
-                                <div class="icon-2">
-                                    <img src="./images/play-store.png" width="100%" />
-                                </div>
+                                <a href="">
+                                    <button class="btn icon-1 mr-4">
+                                        <img src="./images/apple.png" width="100%" />
+                                    </button>
+                                    </a>
+                                    <a href="">
+                                    <button class="btn icon-2">
+                                        <img src="./images/play-store.png" width="100%" />
+                                    </button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -414,12 +423,12 @@
     <!---------section-fiveth-end------------>
     
     <!---------site-cookies-start------------>
-    <section class="cookies-div topdiv">
+    <section class="cookies-div" id="popup">
         <div class="container-fluid">
             <div class="col-md-12">
                 <div class="row align-items-center" >
                     <div class="col-md-12 text-right pb-2">
-                        <button type="button" class="btn close poup-close for-cookies-closs">
+                        <button type="button" class="btn close poup-close for-cookies-closs cookies-hide">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
@@ -427,7 +436,7 @@
                         <span class="cookies-text">We use cookies to ensure you get the best user experience on our website. By continuing to use this site, you agree to the use of these cookies.</span>
                     </div>
                     <div class="col-md-4 col-sm-12 text-right mobile-center">  
-                        <button type="button" class="btn cookies-btn theme-button cookies-hide">Agree</button>
+                        <button type="button" class="btn cookies-btn theme-button cookies-hide" id="clickok">Agree</button>
                     </div>
             </div>
         </div>
@@ -453,10 +462,10 @@
                         <input type="text" class="form-control" placeholder="First name" required>
                     </div>
                     <div>
-                        <input type="text" class="form-control" placeholder="Email" required>
+                        <input type="email" class="form-control" placeholder="Email" required>
                     </div>
                     <div>
-                        <input type="text" class="form-control" placeholder="Phone number (optional)">
+                        <input type="number" class="form-control" placeholder="Phone number (optional)">
                     </div>
                     <div>
                         <input type="text" class="form-control message-box" placeholder="Your message" required>
@@ -474,11 +483,9 @@
     <!----------script------------>
     <script>
         $(document).ready(function () {
-
             $("button.for-cookies-closs").click(function(){
                 $("section.cookies-div").hide();
-            })
-            
+            });
             $(".header-collapse ul li a").click(function(){
                 $("div#navbarSupportedContent").removeClass("show");
             })
@@ -511,16 +518,21 @@
             
         }
         });
-        document.addEventListener('DOMContentLoaded', function () {
-        const topDiv = document.querySelector('.topdiv');
-        const buttonX = document.querySelector('.cookies-hide');
-        const lS = localStorage.getItem('first-visit');
-        buttonX.addEventListener('click', () => {
-        localStorage.setItem('first-visit', false);
-        topDiv.style.display = 'none';
+        if (localStorage.getItem('cookieAccepted') == '1') {
+        $('#popup').hide();
+        }
+        else {
+            $('#popup').show();
+        }
+        $('#clickok').click(function () {
+            $('#popup').hide();
+            localStorage.setItem('cookieAccepted', '1')
         });
-        if (lS) topDiv.style.display = 'none';
+        $('.guidepdf').on('click', function () {
+            var hrf = $(this).attr("name");
+            window.open(hrf);
         });
+        
     </script>
 </body>
 
