@@ -32,11 +32,11 @@ body {
 }
 
 .banner-content h5 {
-    font-size: 32px;
-    font-weight: 600;
+    font-size: 33px;
+    font-weight: 700;
     color: #FCFCFC;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
+    -webkit-text-stroke: 1px black;
+    font-family: 'Montserrat Alternates', sans-serif;
 }
 
 .section-head h5 {
@@ -294,6 +294,13 @@ body {
 .icon-1,
 .icon-2 {
     cursor: pointer;
+    background: transparent;
+    padding: 0;
+}
+.icon-1:focus-visible,.icon-1:focus,
+.icon-2:focus, .icon-2:focus-visible {
+    outline: none;
+    box-shadow: none;
 }
 
 .contact-us-form div {
