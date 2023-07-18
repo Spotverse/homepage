@@ -37,15 +37,17 @@ body {
 }
 
 .banner-content h5 {
-    font-size: 33px;
-    font-weight: 700;
     color: #000000;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 120.5%;
 }
 
 .section-head h5 {
     font-size: 34px;
     color: #000000;
     font-weight: 700;
+    line-height: 44px;
 }
 
 .text-orange {
@@ -87,16 +89,16 @@ body {
 .card-ctm-bg .card-title {
     color: #000;
     font-size: 18px;
-    font-weight: 700;
-    line-height: 130.5%;
+    font-weight: 600;
+    line-height: 23.49px;
     margin-bottom: 4px;
 }
 
 .card-ctm-bg .card-text {
     color: #323755;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 152.5%;
+    line-height: 24.4px;
 }
 
 .upper-image {
@@ -137,24 +139,26 @@ body {
     color: #F63F00;
     font-size: 16px;
     font-weight: 700;
-    line-height: 130.5%;
-    letter-spacing: 1.95px;
+    line-height: 20.88px;
+    letter-spacing: 2.08px;
     text-transform: uppercase;
+    margin-bottom: 4px;
 }
 
 .main-head-inner {
     color: #000;
     font-size: 34px;
     font-weight: 700;
-    line-height: 130.5%;
+    line-height: 44.37px;
     text-transform: capitalize;
+    margin-bottom: 11px;
 }
 
 .inner-content {
     color: #323755;
     font-size: 16px;
     font-weight: 400;
-    line-height: 152.5%;
+    line-height: 24.4px;
 }
 
 .theme-button {
@@ -172,7 +176,7 @@ body {
 
 .carousel-bg {
     background-color: #0000000A;
-    padding: 110px 0px;
+    padding: 93px 0px;
     margin-top: 110px;
 }
 
@@ -225,14 +229,11 @@ body {
 
 .about-app {
     width: 100%;
-    padding: 150px 0;
+    padding: 160px 0;
     background: url(../images/about-app.png);
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.space-form-right {
-    padding-right: 135px;
+    background-position: center right;
 }
 
 .social-icons a i {
@@ -242,14 +243,14 @@ body {
 }
 
 .quick-links {
-    margin-top: 30px;
+    margin-top: 23px;
 }
 
 .quick-links span {
     color: #323755;
     font-size: 16px;
     font-weight: 400;
-    line-height: 150%;
+    line-height: 24px;
     text-transform: capitalize;
 }
 
@@ -267,7 +268,6 @@ body {
 
 .right-reserved {
     margin-top: 12px;
-    margin-bottom: 10px;
 }
 
 .right-reserved span {
@@ -341,6 +341,7 @@ body {
     bottom: 0;
     width: 100%;
     z-index: 3;
+    display: none;
 }
 
 .cookies-btn {
@@ -352,7 +353,7 @@ body {
 }
 
 section.space-form-top {
-    padding-top: 110px;
+    padding-top: 83px;
 }
 
 .message-box {
@@ -392,15 +393,123 @@ section.space-form-top {
     outline: none;
 }
 
+.app-icons {
+    padding: 30px 0px !important;
+}
+
+.icon-1 {
+    padding-right: 64px;
+}
+
+.icon-2 img {
+    width: 216px;
+    height: 64px;
+}
+
+.icon-1 img {
+    width: 192px;
+    height: 64px;
+}
+
+a.nav-link {
+    line-height: 150%;
+    font-weight: 600;
+    font-size: 16px;
+    color: #70717C;
+}
+
+.client-name {
+    letter-spacing: -0.16px;
+    line-height: normal;
+    padding-bottom: 5px;
+}
+
+.clint-degaination {
+    font-weight: 400;
+    line-height: 17.262px;
+    letter-spacing: -0.28px;
+}
+
+.for-about-1 {
+    padding-right: 30px;
+}
+
+.for-about-1 img {
+    width: 194px;
+    height: 71px;
+}
+
+.for-about-2 img {
+    width: 221px;
+    height: 71px;
+}
+
+.about-icons {
+    padding-top: 45px !important;
+    padding-bottom: 0 !important;
+}
+
+.about-text {
+    font-size: 18px;
+    line-height: 152.5%;
+}
+
 /*---------responcive-start------------*/
 @media screen and (max-width: 1440px) {
-    .about-app {
-        padding: 60px 0;
-        background-position: center center;
+
+    .about-text {
+        font-size: 14px;
+        line-height: 152.5%;
     }
 
-    .space-form-right {
-        padding-right: 0;
+    .for-about-1 img {
+        width: 170px;
+        height: 60px;
+    }
+
+    .for-about-2 img {
+        width: 190px;
+        height: 60px;
+    }
+
+    .about-icons {
+        padding-top: 25px !important;
+        padding-bottom: 0 !important;
+    }
+
+    .about-app {
+        padding: 100px 0 130px 0;
+        background-position: right;
+    }
+
+
+}
+
+@media screen and (max-width: 1259px) {
+    .for-about-1 img {
+        width: 180px;
+        height: 61px;
+    }
+
+    .for-about-2 img {
+        width: 200px;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 1130px) {
+    .about-icons {
+        flex-wrap: wrap;
+    }
+
+    .for-about-1 {
+        padding-right: 10px;
+        padding-bottom: 20px;
+    }
+
+    .about-app {
+        padding: 60px 0 60px 0;
+        background-position: center;
     }
 }
 
@@ -430,12 +539,36 @@ section.space-form-top {
         padding: 0px !important;
     }
 
+    .main-head-inner {
+        color: #000;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 44.37px;
+        text-transform: capitalize;
+        margin-bottom: 11px;
+    }
+
+    .sub-text {
+        color: #F63F00;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 20.88px;
+        letter-spacing: 2.08px;
+        text-transform: uppercase;
+        margin-bottom: 4px;
+    }
+
+    .theme-button {
+        font-size: 14px;
+    }
+
 }
 
 @media screen and (min-width: 768px) {
     .space-for-desktop {
         padding: 0px 40px;
     }
+
 }
 
 @media screen and (max-width: 767px) {
@@ -448,9 +581,19 @@ section.space-form-top {
         background-size: contain;
     }
 
+    .icon-1 {
+        padding-right: 0px;
+        padding-bottom: 24px;
+    }
+
     .banner-content h5 {
-        font-size: 26px;
-        padding: 0 30px;
+        font-size: 22px;
+        padding: 0 40px !important;
+        line-height: 27.39px;
+    }
+
+    section.space-form-top {
+        padding-top: 50px;
     }
 
     .banner-content {
@@ -467,29 +610,13 @@ section.space-form-top {
         text-align: center;
     }
 
-    .icon-1 {
-        width: 180px;
-        margin-bottom: 20px;
-    }
-
-    .icon-2 {
-        width: 180px;
-    }
-
-    .icon-1 img {
-        height: 58px;
-    }
-
-    .icon-2 img {
-        height: 58px;
-    }
-
     .section-head {
         text-align: center;
     }
 
     .section-head h5 {
-        font-size: 28px;
+        font-size: 24px;
+        line-height: 31.32px;
     }
 
     .card-serial {
@@ -532,31 +659,73 @@ section.space-form-top {
     }
 
     .card-ctm-bg .card-title {
-        font-size: 18px;
+        font-size: 16px;
+        line-height: 20.88px;
     }
 
     .card-ctm-bg .card-text {
         font-size: 14px;
+        line-height: 21.21px;
     }
 
     .sub-text {
-        font-size: 13px;
+        font-size: 12px;
+        letter-spacing: 1.56px;
+        line-height: 20.88px;
+        font-weight: 600;
     }
 
     .main-head-inner {
-        font-size: 25px;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 31.32px;
     }
 
     .inner-content {
         font-size: 14px;
+        line-height: 21.21px;
+    }
+
+    .theme-button {
+        font-size: 14px;
+        line-height: 21px;
     }
 
     .main-head-inner {
-        font-size: 25px;
+        font-size: 24px;
+    }
+
+    .client-name {
+        font-size: 16px;
+        line-height: normal;
+        letter-spacing: -0.16px;
+    }
+
+    .clint-degaination {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 123.3%;
+        letter-spacing: -0.28px;
+    }
+
+    .carousel-bg {
+        padding: 50px 0px;
+        margin-top: 50px;
     }
 
     .main-head-inner.text-mobile {
-        font-size: 25px;
+        font-size: 24px;
+    }
+
+    .for-about-1 img,
+    .for-about-2 img {
+        width: 196px !important;
+        height: 59px !important;
+    }
+
+    .about-icons {
+        padding-top: 27px !important;
+        padding-bottom: 0 !important;
     }
 
     .right-reserved span {
@@ -580,6 +749,20 @@ section.space-form-top {
     .space-bottom {
         margin-bottom: 20px;
     }
+
+    .icon-1 img,
+    .icon-2 img {
+        width: 192px;
+        height: 57px;
+    }
+
+    .social-icons {
+        margin-top: 10px;
+    }
+
+    .quick-links {
+        padding: 0px 10px;
+    }
 }
 
 @media screen and (max-width: 390px) {
@@ -593,10 +776,6 @@ section.space-form-top {
     .upper-image::before {
         left: 27%;
         width: 64%;
-    }
-
-    .banner-content h5 {
-        padding: 0 10px;
     }
 
     .banner {
