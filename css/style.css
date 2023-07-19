@@ -561,6 +561,16 @@ a.nav-link {
     .theme-button {
         font-size: 14px;
     }
+    
+    .navbar-light .navbar-toggler-icon {
+        background-image: url(../images/mobile-icon.png) !important;
+        width: 22px;
+        height: 18.86px;
+    }
+
+    button.navbar-toggler {
+        border: none;
+    }
 
 }
 
@@ -572,6 +582,7 @@ a.nav-link {
 }
 
 @media screen and (max-width: 767px) {
+
     .upper-image::before {
         background: url(../images/bg-for-mobile.png);
         background-repeat: no-repeat;
@@ -763,6 +774,11 @@ a.nav-link {
     .quick-links {
         padding: 0px 10px;
     }
+
+    .navbar-brand img {
+        max-width: 121px;
+        vertical-align: text-top;
+    }
 }
 
 @media screen and (max-width: 390px) {
@@ -791,11 +807,6 @@ a.nav-link {
     .bg-transparent {
         padding-top: 2px;
         padding-bottom: 2px;
-    }
-
-    .navbar-brand img {
-        max-width: 121px;
-        vertical-align: text-top;
     }
 
     button.navbar-toggler {
