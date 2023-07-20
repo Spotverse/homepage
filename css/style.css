@@ -372,6 +372,9 @@ body {
 section.space-form-top {
     padding-top: 83px;
 }
+section.space-form-top_busi {
+    padding-top: 83px;
+}
 
 .message-box {
     padding: 20px 0 70px 10px !important;
@@ -470,7 +473,17 @@ a.nav-link {
     font-size: 18px;
     line-height: 152.5%;
 }
+.screen-1400 {
+    display: block;
+}
 
+.screen-767 {
+    display: none;
+}
+
+button.navbar-toggler:focus, button.navbar-toggler:focus-visible {
+    outline: none !important; 
+}
 /*---------responcive-start------------*/
 @media screen and (max-width: 1440px) {
 
@@ -589,6 +602,14 @@ a.nav-link {
         border: none;
     }
 
+    .screen-1400 {
+        display: none;
+    }
+
+    .screen-767 {
+        display: block;
+    }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -624,6 +645,10 @@ a.nav-link {
 
     section.space-form-top {
         padding-top: 50px;
+    }
+    section.space-form-top_busi {
+        padding-top: 50px;
+        margin-bottom: 20px;
     }
 
     .banner-content {
@@ -670,7 +695,7 @@ a.nav-link {
     .card-serial-3 {
         top: 63px;
     }
-
+     
     .about-app {
         background: url(../images/about-for-mobile.png);
         background-repeat: no-repeat;
