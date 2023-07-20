@@ -15,9 +15,15 @@ body {
 }
 
 .header-text li a {
-    margin-right: 20px;
-    font-weight: 600;
+     margin-right: 20px; 
     color: #70717C;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 24px */ 
 }
 
 .banner {
@@ -37,21 +43,32 @@ body {
 }
 
 .banner-content h5 {
-    color: #000000;
+    /* color: #000000;
     font-size: 30px;
     font-weight: 600;
-    line-height: 120.5%;
+    line-height: 120.5%; */
+    color: var(--black-000000, #000);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120.5%; /* 36.15px */
 }
 
 .section-head h5 {
     font-size: 34px;
     color: #000000;
+    font-feature-settings: 'clig' off, 'liga' off;
     font-weight: 700;
     line-height: 44px;
 }
 
 .text-orange {
     color: #F63F00;
+    font-feature-settings: 'clig' off, 'liga' off;
+
 }
 
 .card-serial {
@@ -600,6 +617,8 @@ a.nav-link {
     .banner-content h5 {
         font-size: 22px;
         padding: 0 40px !important;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-weight: 600;
         line-height: 27.39px;
     }
 
@@ -609,6 +628,7 @@ a.nav-link {
 
     .banner-content {
         margin-top: 260px;
+       
     }
 
     .app-icons {
@@ -777,6 +797,7 @@ a.nav-link {
 
     .navbar-brand img {
         max-width: 121px;
+        max-height: 32px;
         vertical-align: text-top;
     }
 }
