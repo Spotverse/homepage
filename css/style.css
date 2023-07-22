@@ -421,15 +421,16 @@ section.space-form-top_busi {
     padding-right: 64px;
 }
 
+.icon-1 img,
 .icon-2 img {
     width: 216px;
     height: 64px;
 }
 
-.icon-1 img {
+/* .icon-1 img {
     width: 192px;
     height: 64px;
-}
+} */
 
 a.nav-link {
     line-height: 150%;
@@ -454,12 +455,13 @@ a.nav-link {
     padding-right: 30px;
 }
 
-.for-about-1 img {
+/* .for-about-1 img {
     width: 194px;
     height: 71px;
-}
+} */
 
-.for-about-2 img {
+.for-about-2 img,
+.for-about-1 img {
     width: 221px;
     height: 71px;
 }
