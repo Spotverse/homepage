@@ -864,3 +864,19 @@ button.navbar-toggler:focus, button.navbar-toggler:focus-visible {
 }
 
 /*---------responcive-end------------*/
+
+.loading-spinner {
+    border: 4px solid rgba(255, 165, 0, 0.2); /* Orange with some transparency */
+    border-top: 4px solid #ffa500; /* Solid orange */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite; /* Rotation animation */
+    margin: 0 auto; /* Center the spinner */
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  

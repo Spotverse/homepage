@@ -501,19 +501,25 @@
                             <p>Please complete the form below to contact us, and we'll respond promptly. </p>
                         </div>
                         <div>
-                            <input type="text" class="form-control" placeholder="First name" required>
+                            <input name="name" type="text" class="form-control" placeholder="First name" required>
                         </div>
                         <div>
-                            <input type="email" class="form-control" placeholder="Email" required>
+                            <input name="email" type="email" class="form-control" placeholder="Email" required>
                         </div>
                         <div>
-                            <input type="number" class="form-control" placeholder="Phone number (optional)">
+                            <input name="phone" type="number" class="form-control" placeholder="Phone number (optional)">
                         </div>
                         <div>
-                            <input type="text" class="form-control message-box" placeholder="Your message" required>
+                            <input name="message" type="text" class="form-control message-box" placeholder="Your message" required>
                         </div>
                         <div class="text-right">
-                            <input type="submit" class="btn theme-button popup-submit text-white">
+                            <div class="contact-us-error-message" style="margin-top: 15px; text-align: center; color: red;" ></div>
+                            <div class="contact-us-success-message" style="margin-top: 15px; text-align: center;" ></div>
+
+                            <input type="submit" class="btn theme-button popup-submit text-white contact-us-button" value="Send">
+                            <div class="loading-spinner contact-us-loading" style="float: right; display: none;"></div>
+                            
+                            
                         </div>
                     </form>
                 </div>
@@ -521,9 +527,72 @@
         </div>
     </div>
     <!-- Modal-end -->
+    <script src="https://www.google.com/recaptcha/api.js?render=6LcsZJknAAAAAAx5RAc54y07__FyWxMq22nBokPl" async></script>
+
 
     <!----------script------------>
     <script>
+        var myGloabl=''
+        $("#cotact-pop-up").on('hidden.bs.modal', function () {
+            // This function will be executed after the modal is hidden
+            console.log('Modal hidden');
+            // You can add your additional event handling code here
+            $('.contact-us-success-message').text('');
+            $('.contact-us-error-message').text('');
+            $("form.contact-us-form")[0].reset();
+            $('.contact-us-button').show();
+        });
+            
+        $("form.contact-us-form").submit(function (e) {
+            e.preventDefault();
+            const form = e.currentTarget;
+            console.log(form)
+            grecaptcha.ready(function() {
+                grecaptcha.execute('6LcsZJknAAAAAAx5RAc54y07__FyWxMq22nBokPl', {action: 'submit'})
+                .then(function(token) {
+                    $('.contact-us-button').hide();
+                    $('.contact-us-loading').show();
+                    var raw = JSON.stringify({
+                        "data": {
+                            "name": form.name.value,
+                            "email": form.email.value,
+                            "phone": form.phone.value,
+                            "message": form.message.value,
+                        },
+                        'token': token
+                    });
+
+                    var requestOptions = {
+                        method: 'POST',
+                        headers: {"Content-Type": "application/json"},
+                        body: raw,
+                    };
+
+                    fetch("https://api.spotverse.co/api/contact-uses", requestOptions)
+                        .then(response => response.json())
+                        .then(result => {
+                            console.log(result);
+                            if(result.error){                                
+                                $('.contact-us-success-message').text('');
+                                $('.contact-us-error-message').text(result.error.message);
+                                $('.contact-us-button').show();
+                            }else{
+                                $('.contact-us-error-message').text('');
+                                $('.contact-us-success-message').text(result.message)
+                            }
+                        })
+                        .catch(error => {
+                            $('.contact-us-success-message').text('');
+                            $('.contact-us-error-message').text(error);
+                            $('.contact-us-button').show();
+                        })
+                        .finally(() => {
+                            $('.contact-us-loading').hide();
+                        });
+                });
+            });
+        });
+
         $(document).ready(function () {
             $("button.for-cookies-closs").click(function () {
                 $("section.cookies-div").hide();
