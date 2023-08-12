@@ -880,3 +880,6 @@ button.navbar-toggler:focus, button.navbar-toggler:focus-visible {
     100% { transform: rotate(360deg); }
   }
   
+.grecaptcha-badge { 
+    visibility: hidden;
+}
