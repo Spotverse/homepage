@@ -22,7 +22,7 @@ body {
     font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 18.9px; /* 24px */ 
 }
 
@@ -90,7 +90,7 @@ body {
 .card-serial span {
     color: #F63F00;
     font-size: 34px; /*54px;*/
-    font-weight: 700;
+    font-weight: 600;
     line-height: 70.47px;
 }
 
@@ -156,7 +156,7 @@ body {
 .sub-text {
     color: #F63F00;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 20.88px;
     letter-spacing: 2.08px;
     text-transform: uppercase;
@@ -575,7 +575,7 @@ button.navbar-toggler:focus, button.navbar-toggler:focus-visible {
     .main-head-inner {
         color: #000;
         font-size: 24px;
-        font-weight: 700;
+        font-weight: 600;
         line-height: 44.37px;
         text-transform: capitalize;
         margin-bottom: 11px;
@@ -584,7 +584,7 @@ button.navbar-toggler:focus, button.navbar-toggler:focus-visible {
     .sub-text {
         color: #F63F00;
         font-size: 15px;
-        font-weight: 700;
+        font-weight: 600;
         line-height: 20.88px;
         letter-spacing: 2.08px;
         text-transform: uppercase;
@@ -642,7 +642,7 @@ button.navbar-toggler:focus, button.navbar-toggler:focus-visible {
         font-size: 22px;
         padding: 0 40px !important;
         font-feature-settings: 'clig' off, 'liga' off;
-        font-weight: 600;
+        font-weight: 400;
         line-height: 27.39px;
     }
 
@@ -731,12 +731,12 @@ button.navbar-toggler:focus, button.navbar-toggler:focus-visible {
         font-size: 12px;
         letter-spacing: 1.56px;
         line-height: 20.88px;
-        font-weight: 600;
+        font-weight: 400;
     }
 
     .main-head-inner {
         font-size: 24px;
-        font-weight: 600;
+        font-weight: 400;
         line-height: 31.32px;
     }
 
