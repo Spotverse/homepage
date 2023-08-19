@@ -39,7 +39,8 @@ body {
 }
 
 .banner-content {
-    margin-top: 190px;
+    margin-top: 300px;
+    /* padding-bottom: 40px; */
 }
 
 .banner-content h5 {
@@ -415,7 +416,7 @@ section.space-form-top_busi {
 }
 
 .app-icons {
-    padding: 30px 0px !important;
+    padding: 60px 0px !important;
 }
 
 .icon-1 {
@@ -424,7 +425,7 @@ section.space-form-top_busi {
 
 .icon-1 img,
 .icon-2 img {
-    width: 203px;
+    width: 204px;
     height: 58px;
 }
 
