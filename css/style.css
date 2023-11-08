@@ -15,15 +15,15 @@ body {
 }
 
 .header-text li a {
-     margin-right: 20px; 
-    color: #70717C;
+    margin-right: 20px; 
+    color: rgb(107, 107, 107);
     text-align: center;
-    font-feature-settings: 'clig' off, 'liga' off;
+    /* font-feature-settings: 'clig' off, 'liga' off; */
     font-family: Montserrat;
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 600;
-    line-height: 150%; /* 24px */ 
+    line-height: 18.9px; /* 24px */ 
 }
 
 .banner {
@@ -39,7 +39,8 @@ body {
 }
 
 .banner-content {
-    margin-top: 190px;
+    margin-top: 300px;
+    /* padding-bottom: 40px; */
 }
 
 .banner-content h5 {
@@ -51,17 +52,18 @@ body {
     text-align: center;
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: Montserrat;
-    font-size: 30px;
+    font-size: 26px;
     font-style: normal;
     font-weight: 600;
     line-height: 120.5%; /* 36.15px */
 }
 
 .section-head h5 {
-    font-size: 34px;
+    font-size: 24px; /*34px;*/
     color: #000000;
     font-feature-settings: 'clig' off, 'liga' off;
-    font-weight: 700;
+    /* font-style: bold; */
+    font-weight: 600;
     line-height: 44px;
 }
 
@@ -88,8 +90,8 @@ body {
 
 .card-serial span {
     color: #F63F00;
-    font-size: 54px;
-    font-weight: 700;
+    font-size: 34px; /*54px;*/
+    font-weight: 600;
     line-height: 70.47px;
 }
 
@@ -113,7 +115,7 @@ body {
 
 .card-ctm-bg .card-text {
     color: #323755;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 24.4px;
 }
@@ -155,7 +157,7 @@ body {
 .sub-text {
     color: #F63F00;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 20.88px;
     letter-spacing: 2.08px;
     text-transform: uppercase;
@@ -164,18 +166,18 @@ body {
 
 .main-head-inner {
     color: #000;
-    font-size: 34px;
-    font-weight: 700;
+    font-size: 24px;
+    font-weight: 600;
     line-height: 44.37px;
     text-transform: capitalize;
-    margin-bottom: 11px;
+    margin-bottom: 8px;
 }
 
 .inner-content {
     color: #323755;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24.4px;
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 18px;
 }
 
 .theme-button {
@@ -184,7 +186,7 @@ body {
     background: #F63F00;
     color: #ffffff;
     box-shadow: 0px 12px 20px 0px rgba(89, 52, 213, 0.12);
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     line-height: 150%;
     text-transform: capitalize;
@@ -265,7 +267,7 @@ body {
 
 .quick-links span {
     color: #323755;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 24px;
     text-transform: capitalize;
@@ -289,7 +291,7 @@ body {
 
 .right-reserved span {
     color: #323755;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 400;
     line-height: 150%;
     text-transform: capitalize;
@@ -414,7 +416,7 @@ section.space-form-top_busi {
 }
 
 .app-icons {
-    padding: 30px 0px !important;
+    padding: 60px 0px !important;
 }
 
 .icon-1 {
@@ -423,8 +425,8 @@ section.space-form-top_busi {
 
 .icon-1 img,
 .icon-2 img {
-    width: 216px;
-    height: 64px;
+    width: 204px;
+    height: 58px;
 }
 
 /* .icon-1 img {
@@ -462,8 +464,8 @@ a.nav-link {
 
 .for-about-2 img,
 .for-about-1 img {
-    width: 221px;
-    height: 71px;
+    width: 203px;
+    height: 64px;
 }
 
 .about-icons {
@@ -472,7 +474,7 @@ a.nav-link {
 }
 
 .about-text {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 152.5%;
 }
 .screen-1400 {
@@ -573,8 +575,8 @@ button.navbar-toggler:focus, button.navbar-toggler:focus-visible {
 
     .main-head-inner {
         color: #000;
-        font-size: 28px;
-        font-weight: 700;
+        font-size: 24px;
+        font-weight: 600;
         line-height: 44.37px;
         text-transform: capitalize;
         margin-bottom: 11px;
@@ -583,7 +585,7 @@ button.navbar-toggler:focus, button.navbar-toggler:focus-visible {
     .sub-text {
         color: #F63F00;
         font-size: 15px;
-        font-weight: 700;
+        font-weight: 600;
         line-height: 20.88px;
         letter-spacing: 2.08px;
         text-transform: uppercase;
@@ -639,9 +641,9 @@ button.navbar-toggler:focus, button.navbar-toggler:focus-visible {
 
     .banner-content h5 {
         font-size: 22px;
-        padding: 0 40px !important;
+        padding: 0 30px !important;
         font-feature-settings: 'clig' off, 'liga' off;
-        font-weight: 600;
+        font-weight: 400;
         line-height: 27.39px;
     }
 
@@ -730,12 +732,12 @@ button.navbar-toggler:focus, button.navbar-toggler:focus-visible {
         font-size: 12px;
         letter-spacing: 1.56px;
         line-height: 20.88px;
-        font-weight: 600;
+        font-weight: 400;
     }
 
     .main-head-inner {
         font-size: 24px;
-        font-weight: 600;
+        font-weight: 400;
         line-height: 31.32px;
     }
 
@@ -787,7 +789,7 @@ button.navbar-toggler:focus, button.navbar-toggler:focus-visible {
     }
 
     .right-reserved span {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .banner {
@@ -823,7 +825,7 @@ button.navbar-toggler:focus, button.navbar-toggler:focus-visible {
     }
 
     .navbar-brand img {
-        max-width: 121px;
+        max-width: 188px;
         max-height: 32px;
         vertical-align: text-top;
     }
