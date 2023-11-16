@@ -853,6 +853,13 @@ button.navbar-toggler:focus, button.navbar-toggler:focus-visible {
     .banner-content {
         margin-top: 120px;
     }
+    .banner-content h5 {
+        margin-bottom: -10px; 
+    }
+
+    .app-icons {
+        margin-top: -10px; 
+    }
 
     .bg-transparent {
         padding-top: 2px;
